@@ -19,6 +19,13 @@ header {
 h3 {
     font-size: 1.5rem;
     color: black;
+    border-bottom: 2px solid rgb(79, 77, 77);
+    padding: 2px;
+    width: 65%;
+}
+
+main {
+    max-width: 1400px;
 }
 
 .headers div {
@@ -49,7 +56,7 @@ h3 {
 }
 
 .headers a:hover {
-    color: #422701;
+    color: #fd9708;
 }
 
 body {
@@ -91,6 +98,7 @@ main {
 .card a {
     color: black;
     padding: 10px;
+    font-size: 20px;
 }
 
 .card h2 {
@@ -112,7 +120,7 @@ h3 {
     grid-template-columns: 2fr;
     padding: 20px;
     color: black; 
-    font-weight: 30px;
+    font-weight: 300;
     font-size: 17px;
 }
 
@@ -132,7 +140,7 @@ h3 {
     grid-template-columns: 2fr;
     padding: 10px;
     color: black;
-    font-weight: 30px;
+    font-weight: 400;
     font-size: 17px;
 }
 
