@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Africa</title>
+    <meta name="description" content="My dream country to visit.">
+    <meta name="author" content="Victor Ongoli">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Lilita+One&family=Poetsen+One&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>South Africa, Cape Town.</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="images/arizona-temple2.webp" alt="">  
+                <source media="(min-width: 768px)" srcset="images/utah-temple.webp" alt=""> 
+                <img src="images/fav-large.webp" alt="Cape Town" loading="lazy">   
+            </picture>
+        </section>
+    
+        <div class="content">
+            <section class="country-info">
+                <table>
+                    <h2>Data</h2>
+                    <tbody>
+                        <tr>
+                            <th scope="col">Area:</th>
+                            <td scope="row">500,000 sq km</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Population:</th>
+                            <td scope="row">27,000</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Capital:</th>
+                            <td scope="row">Johannesburg</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Languages:</th>
+                            <td scope="row">English, Zulu, Nkosa</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Currency:</th>
+                            <td scope="row">South African Rand</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Time Zone:</th>
+                            <td scope="row">UTC+3</td>
+                        </tr>
+                        <tr>
+                            <th sscope="col">Calling Code:</th>
+                            <td scope="row">+234</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Internet TLD:</th>
+                            <td scope="row">.mg</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="weather-info">
+                <h2>Weather</h2>
+                <figure>
+                    <img src="images/cloud-sun-fill.svg" alt="weather Icon">
+                </figure>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="col">Temperature: </th>
+                            <td scope="row">10°c</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Conditions: </th>
+                            <td scope="row">Sunny</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Wind: </th>
+                            <td scope="row">3km/h</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Wind Chill: </th>
+                            <td scope="row"><span id="windChill"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p><span id="current-year"></span> Victor Ongoli Kenya.</p>
+        <p><span id="last-modified"></span></p>
+    </footer>
+
+</body>
+
+</html>
