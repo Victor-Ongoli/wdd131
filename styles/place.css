@@ -126,7 +126,6 @@ footer {
         display: none;
     }
     
-
     .weather-info h2::after {
         content: "⛅";
     }
