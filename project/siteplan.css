@@ -1,0 +1,43 @@
+:root {
+  --primary: #FFB343;
+  --secondary: #B37E2E;
+  --text: #121212;
+}
+
+h1, h2 {
+  background-color: var(--secondary);
+  font-family: "Gruppo", sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+  padding: 1em;
+  text-align: center;
+}
+
+p {
+  font-family: "Edu SA Hand", cursive;
+  font-weight: 500;
+  color: rgb(9, 9, 9);
+}
+
+body {
+  background-color: var(--primary);
+}
+
+.wire a {
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  font-family: "Edu SA Hand", cursive;
+  font-weight: 500;
+}
+
+.wire a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: .5em;
+}
+
+footer {
+  text-align: center;
+}
