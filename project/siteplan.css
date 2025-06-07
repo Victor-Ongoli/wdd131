@@ -13,6 +13,10 @@ h1, h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: "Edu SA Hand", cursive;;
+}
+
 p {
   font-family: "Edu SA Hand", cursive;
   font-weight: 500;

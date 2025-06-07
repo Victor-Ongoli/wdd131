@@ -2,40 +2,94 @@
 <html lang="en-US">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="styles/form.css">
-  <script src="scripts/form.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User form</title>
+    <meta name="description" content="Filling out forms is a great way for sellers to know how to satisty customers needs and how to also improve in offering goods and services.">
+    <meta name="author" content="Victor Ongoli">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Gruppo&display=swap"
+        rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
-  <header>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
 
-  </header>
-  <main>
-    <form>
-      <feildset>
-        <legend></legend>
-      </feildset>
-    </form>
-  </main>
-  <footer>
+        <form id="productForm" method="get" action="review.html">
 
-  </footer>
+            <fieldset class="select">
+                <!-- <legend>Product Name</legend> -->
+                <label for="productSelect">Product Name:</label>
+                <select id="productSelect" name="selectedProduct" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="rating-group">
+                <legend>Overall rating</legend>
+                    <label for="star1" title="1 stars">⭐</label>
+                    <input type="radio" id="star1" name="productRating" value="1" required>
+
+                    <label for="star2" title="2 stars">⭐⭐</label>
+                    <input type="radio" id="star2" name="productRating" value="2">
+
+                    <label for="star3" title="3 stars">⭐⭐⭐</label>
+                    <input type="radio" id="star3" name="productRating" value="3">
+
+                    <label for="star4" title="4 stars">⭐⭐⭐⭐</label>
+                    <input type="radio" id="star4" name="productRating" value="4">
+
+                    <label for="star5" title="5 star">⭐⭐⭐⭐⭐</label>
+                    <input type="radio" id="star5" name="productRating" value="5">
+            </fieldset>
+                
+            <fieldset>
+                <!-- <legend>Date of Installation</legend> -->
+                <label for="installDate">Date of Installation</label>
+                    <input type="date" id="installDate" name="installationDate" required>
+                    <!-- <label for="installDate">Date of Installation</label> -->
+            </fieldset>
+
+            <fieldset class="features">
+                <legend>Useful features</legend>
+
+                    <label for="feature1">Ease of use</label>
+                    <input type="checkbox" id="feature1" name="usefulFeatures" value="EaseOfUse">
+
+                    <label for="feature2">Long battery</label>
+                    <input type="checkbox" id="feature2" name="usefulFeatures" value="BatteryLife">
+
+                    <label for="feature3">Ease of use</label>
+                    <input type="checkbox" id="feature3" name="usefulFeatures" value="Quality">
+                    
+                    <label for="feature4">Ease of use</label>
+                    <input type="checkbox" id="feature4" name="usefulFeatures" value="Design">
+            </fieldset>
+
+            <fieldset class="review">
+                    <label for="reviewText">Your Review:</label>    
+                    <textarea id="reviewText" name="writtenReview" rows="5" cols="50"></textarea>
+            </fieldset>
+
+            <fieldset class="name">
+                <label for="userName">Your Name (optional):</label>
+                <input type="text" id="userName" name="userName">
+            </fieldset>
+
+        <input type="submit" value="Submit Review">
+        </form>
+    </main>
+    <footer>
+        <p><span id="current-year"></span> | Victor Ongoli | Nairobi</p>
+        <p>Last Modification:<span id="last-modified"></span></p>
+    </footer>
+
 </body>
-
-
-ble id="sections">
-  <caption id="courseName"></caption>
-  <thead>
-    <tr>
-      <th>Section</th>
-      <th>Enrollment</th>
-      <th>Instructor</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
 
 </html>
